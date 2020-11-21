@@ -31,9 +31,9 @@ public class UserController {
         try {
             User userDB = userService.login(user);
             Map<String, String> map = new HashMap<>();
-            map.put("id", user.getId());
-            map.put("username", user.getName());
-            map.put("password",user.getPassword());
+            map.put("id", userDB.getId());
+            map.put("username", userDB.getName());
+            map.put("password",userDB.getPassword());
             String token = JWTUtils.getToken(map);
             result.put("state", true);
             result.put("msg", "登录成功!!!");
@@ -53,7 +53,7 @@ public class UserController {
         String token = request.getHeader("token");
         DecodedJWT verify=JWTUtils.verify(token);
         log.info("用户id为：[{}]",verify.getClaim("id").asString());
-        log.info("用户name为：[{}]",verify.getClaim("name").asString());
+        log.info("用户name为：[{}]",verify.getClaim("username").asString());
         log.info("用户密码为：[{}]",verify.getClaim("password").asString());
         map.put("status", true);
         map.put("msg", "请求成功！");

@@ -3,7 +3,6 @@ package com.springboot.jwt.interceptors;
 import com.auth0.jwt.exceptions.AlgorithmMismatchException;
 import com.auth0.jwt.exceptions.SignatureVerificationException;
 import com.auth0.jwt.exceptions.TokenExpiredException;
-import com.auth0.jwt.interfaces.DecodedJWT;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.springboot.jwt.utils.JWTUtils;
 import org.springframework.web.servlet.HandlerInterceptor;
