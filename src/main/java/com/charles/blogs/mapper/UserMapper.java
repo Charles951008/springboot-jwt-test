@@ -1,6 +1,6 @@
-package com.springboot.jwt.mapper;
+package com.charles.blogs.mapper;
 
-import com.springboot.jwt.entity.User;
+import com.charles.blogs.entity.User;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

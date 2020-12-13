@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.springboot.jwt</groupId>
-    <artifactId>springboot-jwt-test</artifactId>
+    <artifactId>charles-service-blogs</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-jwt-test</name>
+    <name>charles-service-blogs</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>

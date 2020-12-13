@@ -1,10 +1,10 @@
-package com.springboot.jwt.interceptors;
+package com.charles.blogs.interceptors;
 
+import com.charles.blogs.utils.JWTUtils;
 import com.auth0.jwt.exceptions.AlgorithmMismatchException;
 import com.auth0.jwt.exceptions.SignatureVerificationException;
 import com.auth0.jwt.exceptions.TokenExpiredException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.springboot.jwt.utils.JWTUtils;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 

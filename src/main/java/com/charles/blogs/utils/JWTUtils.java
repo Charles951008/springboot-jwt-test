@@ -1,4 +1,4 @@
-package com.springboot.jwt.utils;
+package com.charles.blogs.utils;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTCreator;

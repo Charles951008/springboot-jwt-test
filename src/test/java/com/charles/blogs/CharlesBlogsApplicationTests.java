@@ -1,6 +1,6 @@
-package com.springboot.jwt;
+package com.charles.blogs;
 
-import com.springboot.jwt.service.ProcessService;
+import com.charles.blogs.service.ProcessService;
 import org.activiti.engine.ProcessEngine;
 import org.activiti.engine.RuntimeService;
 import org.activiti.engine.runtime.ProcessInstance;
@@ -12,7 +12,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-class JwtTestApplicationTests {
+class CharlesBlogsApplicationTests {
 
     @Autowired
     private ProcessEngine processEngine;

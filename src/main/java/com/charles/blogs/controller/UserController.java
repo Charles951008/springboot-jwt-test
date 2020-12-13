@@ -1,9 +1,9 @@
-package com.springboot.jwt.controller;
+package com.charles.blogs.controller;
 
+import com.charles.blogs.utils.JWTUtils;
 import com.auth0.jwt.interfaces.DecodedJWT;
-import com.springboot.jwt.entity.User;
-import com.springboot.jwt.service.UserService;
-import com.springboot.jwt.utils.JWTUtils;
+import com.charles.blogs.entity.User;
+import com.charles.blogs.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

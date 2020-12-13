@@ -1,6 +1,6 @@
-package com.springboot.jwt.service;
+package com.charles.blogs.service;
 
-import com.springboot.jwt.entity.User;
+import com.charles.blogs.entity.User;
 
 /**
  * @author wangshengli

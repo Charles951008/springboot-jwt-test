@@ -4,7 +4,7 @@ server:
 
 spring:
   application:
-    name: jwt
+    name: charles
 
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
@@ -25,8 +25,8 @@ spring:
     db-history-used: true
 
 mybatis:
-  type-aliases-package: com.springboot.jwt.entity
-  mapper-locations: classpath:com/springboot/jwt/mapper/*.xml
+  type-aliases-package: com.charles.blogs.entity
+  mapper-locations: classpath:com/charles/blogs/mapper/*.xml
 
 logging:
   level:

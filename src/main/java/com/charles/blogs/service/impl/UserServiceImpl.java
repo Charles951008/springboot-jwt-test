@@ -1,8 +1,8 @@
-package com.springboot.jwt.service.impl;
+package com.charles.blogs.service.impl;
 
-import com.springboot.jwt.entity.User;
-import com.springboot.jwt.mapper.UserMapper;
-import com.springboot.jwt.service.UserService;
+import com.charles.blogs.entity.User;
+import com.charles.blogs.mapper.UserMapper;
+import com.charles.blogs.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;

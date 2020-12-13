@@ -1,4 +1,4 @@
-package com.springboot.jwt.entity;
+package com.charles.blogs.entity;
 
 import lombok.Data;
 
