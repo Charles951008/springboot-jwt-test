@@ -26,14 +26,14 @@ class CharlesBlogsApplicationTests {
     @Test
     public void startProcess(){
         RuntimeService runtimeService = this.processEngine.getRuntimeService();
-        String processDefinitionKey="financeProcess";
+        String processDefinitionKey="marryLeave";
         runtimeService.startProcessInstanceByKey(processDefinitionKey);
         System.out.println("流程启动成功");
     }
 
     @Test
     public ProcessInstance startTask(){
-        return processService.startProcess("financeProcess",null);
+        return processService.startProcess("marryLeave",null);
     }
 
 }
