@@ -17,7 +17,7 @@ import java.util.Map;
  * 拦截器
  * @author wangshengli
  */
-public class JWTInterceptor implements HandlerInterceptor {
+public class JwtInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         Map<String, Object> map = new HashMap<>();
