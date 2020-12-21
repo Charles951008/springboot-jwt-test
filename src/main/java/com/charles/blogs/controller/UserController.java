@@ -8,6 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
@@ -24,14 +25,14 @@ public class UserController {
     private UserService userService;
 
     @GetMapping("/user/login")
-    public Map<String, Object> login(User user) {
+    public Map<String, Object> login(@RequestParam(value = "name") String name,
+                                     @RequestParam(value = "password")String password) {
         Map<String, Object> result = new HashMap<>();
-        log.info("用户名：[{}]", user.getName());
-        log.info("密码：[{}]", user.getPassword());
+        log.info("用户名：[{}]", name);
+        log.info("密码：[{}]", password);
         try {
-            User userDB = userService.login(user);
+            User userDB = userService.login(name,password);
             Map<String, String> map = new HashMap<>();
-            map.put("id", userDB.getId());
             map.put("username", userDB.getName());
             map.put("password",userDB.getPassword());
             String token = JWTUtils.getToken(map);

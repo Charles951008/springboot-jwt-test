@@ -6,9 +6,11 @@ import com.charles.blogs.entity.User;
  * @author wangshengli
  */
 public interface UserService {
+
     /**
-     * @param user
+     * @param name
+     * @param password
      * @return
      */
-    User login(User user);
+    User login(String name,String password);
 }

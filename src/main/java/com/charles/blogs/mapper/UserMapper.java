@@ -13,5 +13,5 @@ public interface UserMapper {
      * @param user
      * @return User
      */
-    User login(User user);
+    User login(String name,String password);
 }

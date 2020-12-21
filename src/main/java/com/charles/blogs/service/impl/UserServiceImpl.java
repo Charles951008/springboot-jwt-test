@@ -20,8 +20,8 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @Transactional(propagation = Propagation.SUPPORTS)
-    public User login(User user) {
-        User userDB=userMapper.login(user);
+    public User login(String name,String password) {
+        User userDB=userMapper.login(name,password);
         if(userDB!=null){
             return userDB;
         }
